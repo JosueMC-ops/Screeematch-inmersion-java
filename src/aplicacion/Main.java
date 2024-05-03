@@ -36,7 +36,7 @@ public class Main {
             double notaMatrix = in.nextDouble();
             mediaEvalucionesUsuario += notaMatrix;
         }
-        
+        System.out.println("La media de la pelicula"+ "Matrix calculado por el usuario: "+ mediaEvalucionesUsuario );
         System.out.println("Con un While ");
         
         while (j<3){ 
