@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //System.out.println("Pelicula Matrix");
+        Scanner in = new Scanner(System.in);
         
         int fechaDeLanzamiento = 1999;
         double evaluacion = 4.5;
@@ -16,6 +17,7 @@ public class Main {
                           La mejor pelicula del fin del milenio
                           """;
         double mediaEvalucionesUsuario = 0;
+        int j = 0;
         
         System.out.println("Bienvenidos a la Inmersion en Java");
         System.out.println("Pelicula: "+nombre);
@@ -30,10 +32,18 @@ public class Main {
         }
         
         for (int i=0; i<3; i++){
-            Scanner in = new Scanner(System.in);
             System.out.println("Ingresa la nota o evaluacion que le daria a Matrix");
             double notaMatrix = in.nextDouble();
             mediaEvalucionesUsuario += notaMatrix;
+        }
+        
+        System.out.println("Con un While ");
+        
+        while (j<3){ 
+            System.out.println("Ingresa la nota o evaluacion que le daria a Matrix");
+            double notaMatrix = in.nextDouble();
+            mediaEvalucionesUsuario += notaMatrix; 
+            j++;
         }
         System.out.println("La media de la pelicula"+ "Matrix calculado por el usuario: "+ mediaEvalucionesUsuario );
     }
